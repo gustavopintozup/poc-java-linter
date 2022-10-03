@@ -16,7 +16,7 @@ public class ArchitecturalCheckingTest {
     spoon.getEnvironment().setNoClasspath(true);
     spoon.addInputResource(new Resources().findFile("UploadFileService.java"));
 
-    PublicMethodsWithoutDocs  processor = new PublicMethodsWithoutDocs();
+    PublicMethodsWithoutDocsProcessor  processor = new PublicMethodsWithoutDocsProcessor();
     spoon.addProcessor(processor);
     spoon.run();
 

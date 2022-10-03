@@ -9,7 +9,7 @@ import spoon.reflect.declaration.CtType;
 import spoon.reflect.declaration.ModifierKind;
 import spoon.support.Level;
 
-public class PublicMethodsWithoutDocs extends AbstractProcessor<CtMethod> {
+public class PublicMethodsWithoutDocsProcessor extends AbstractProcessor<CtMethod> {
 
     public final List<CtMethod> methodsWithoutDocs = new ArrayList<>();
 
